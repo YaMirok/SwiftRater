@@ -126,11 +126,6 @@ import StoreKit
         super.init()
     }
 
-    private override init(with appID: Int) {
-        super.init()
-        self.appID = appID
-    }
-
     public static func appLaunched() {
         if SwiftRater.resetWhenAppUpdated && SwiftRater.appVersion != UsageDataManager.shared.trackingVersion {
             UsageDataManager.shared.reset()
