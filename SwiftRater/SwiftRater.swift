@@ -77,7 +77,7 @@ import StoreKit
 
     public static var shared = SwiftRater()
 
-    fileprivate var appID: Int?
+    public var appID: Int?
 
     private static var appVersion: String {
         get {
